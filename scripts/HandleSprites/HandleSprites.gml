@@ -7,12 +7,18 @@ switch (argument0){
 		sp_adelante = caminando_r
 		sp_atras = caminando_l
 		sprite_index = sp_quieto
+		sp_duck = agachao_i
+		sp_down = down_ryu
+		sp_jump= salto_r
 	break
 	case CHAR_CHUN:
 		sp_quieto=parao_chun
 		sp_adelante = caminando_r_chun
 		sp_atras = caminando_l_chun
 		sprite_index = sp_quieto
+		sp_duck = chun_down
+		sp_down = chun_down
+		sp_jump = chun_jump
 	break
 }
 }

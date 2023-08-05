@@ -9,8 +9,8 @@ if place_meeting(x+hspd, y, obj_suelo){
 	}
 	hspd = 0
 }
-
-if place_meeting(x, y+vspd, obj_suelo){
+landed =place_meeting(x, y+vspd, obj_suelo)
+if landed{
 	while !place_meeting(x,y+sign(vspd), obj_suelo){
 	y +=sign(vspd)
 	}

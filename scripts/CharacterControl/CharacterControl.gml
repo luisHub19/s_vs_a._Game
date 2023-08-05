@@ -3,8 +3,22 @@
 function CharacterControl(){
 switch(state){
 	case STATE_FREE:
-		hspd = WALK_SPD*(KC(righ)-KC(left))
+		can_attack = true
+	if landed{
+		if !duck
+			hspd = WALK_SPD*(KC(right)-KC(left))
+		else
+			hspd = 0
+		if KCP(up){
+			vspd = JUMP_FORCE
+			landed = false 
+		}
+		
+		duck = KC(down)
+	}else{
+			}
 break
 }
+if landed
 image_xscale=(opponent.x>x)?1:-1
 }
